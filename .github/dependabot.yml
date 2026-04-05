@@ -1,0 +1,62 @@
+# Dependabot configuration for bot-02
+# Next.js 14 + ESLint Config Next
+# Docs: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "06:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 10
+    labels:
+      - "security"
+    assignees:
+      - "samsrose"
+    reviewers:
+      - "samsrose"
+    commit-message:
+      prefix: "fix(deps)"
+      prefix-development: "chore(deps)"
+      include: "scope"
+    # Group all non-breaking Next.js ecosystem updates into one PR
+    groups:
+      nextjs-ecosystem:
+        patterns:
+          - "next"
+          - "eslint-config-next"
+          - "@next/*"
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+    # Always open individual PRs for MAJOR bumps and security advisories
+    ignore:
+      # Never auto-merge major version bumps — review manually
+      - dependency-name: "next"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+
+  # Keep GitHub Actions up to date
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "America/Los_Angeles"
+    labels:
+      - "security"
+    assignees:
+      - "samsrose"
+    commit-message:
+      prefix: "chore(ci)"
