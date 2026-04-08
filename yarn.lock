@@ -501,17 +501,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@t3-oss/env-core@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@t3-oss/env-core/-/env-core-0.7.1.tgz#5e0568203d539bb2a35c96f02d33b6e204a194e5"
-  integrity sha512-3+SQt39OlmSaRLqYVFv8uRm1BpFepM5TIiMytRqO9cjH+wB77o6BIJdeyM5h5U4qLBMEzOJWCY4MBaU/rLwbYw==
+"@t3-oss/env-core@0.13.11":
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/@t3-oss/env-core/-/env-core-0.13.11.tgz#c8e0da67986978a6915783efa3535435416753b0"
+  integrity sha512-sM7GYY+KL7H/Hl0BE0inWfk3nRHZOLhmVn7sHGxaZt9FAR6KqREXAE+6TqKfiavfXmpRxO/OZ2QgKRd+oiBYRQ==
 
-"@t3-oss/env-nextjs@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@t3-oss/env-nextjs/-/env-nextjs-0.7.1.tgz#556a49382d22c190e5f9900e703679107cac483e"
-  integrity sha512-tQDbNLGCOvKGi+JoGuJ/CJInJI7/kLWJqtgGppAKS7ZFLdVOqZYR/uRjxlXOWPnxmUKF8VswOAsq7fXUpNZDhA==
+"@t3-oss/env-nextjs@^0.13.11":
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/@t3-oss/env-nextjs/-/env-nextjs-0.13.11.tgz#900ce47a3395118f286b740165a0394965a67ba8"
+  integrity sha512-NC+3j7YWgpzdFu1t5y/8wqibTK0lm5RS4bjXA1n8uwik3wIR4iZM4Fa+U2BaMa5k3Qk8RZiYhoAIX0WogmGkzg==
   dependencies:
-    "@t3-oss/env-core" "0.7.1"
+    "@t3-oss/env-core" "0.13.11"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
